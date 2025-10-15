@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d2430;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 1.8;
+}
+.navbar-brand , .text-gradient{
+  font-size: 1.8rem;
+  background: #833ab4;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(195, 43, 101, 1) 0%,
+    rgba(69, 66, 65, 1) 0%,
+    rgba(143, 79, 79, 0.84) 0%,
+    rgba(143, 79, 79, 1) 50%,
+    rgba(199, 124, 20, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-link {
+  font-size: 1.2rem;
+  margin-right: 1.2rem;
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background: #00f2ff;
+  box-shadow: 0 0 10px #00f2ff, 0 0 20px #00f2ff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00f2ff;
+  text-shadow: 0 0 10px #00f2ff;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+.mt-80{
+  margin-top: 80px;
+}
+.bg-transparent{
+  background-color:  #0d2430 !important;
+  color: white;
+}
+.image-profile{
+  width: 400px;
+  object-fit: cover;
+  margin: auto;
+}
+.icon-hover{
+  border: 2px solid #721adc !important;
+  padding: 6px 9px;
+  border-radius: 50%;
+  transition: 0.3s  ease-in!important;
+}
+.icon-hover:hover{
+  color: #721adc !important;
+  
+}
+.image-icon{
+  width: 100px;
+  filter: drop-shadow(0 0 10px rgb(89, 37, 232));
+}
+.skill-bar{
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: #eee;
+  border-radius: 6px;
+  
+}
+.bar{
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 600;
+  padding-left: 10px;
+  border-radius: 6px;
+  transition: width 1.2s ease;
+}
+
+.bar.html { width: 95%; background-color: #11eb47; }
+.bar.css { width: 90%; background-color: #11eb47; }
+.bar.Bootstrap { width: 93%; background-color: #11eb47; }
+.bar span { float: right; padding-right: 10px; }
