@@ -164,19 +164,20 @@ html{
   text-transform: uppercase;
   line-height: 0.6em;
 }
-/* .image-profile-about{
+.image-profile-about{
+  width: 200px;
   display: inline-block;
   animation: img-about 3s ease-in-out infinite alternate;
   transition: transform 0.3s ease;
-} */
-/* @keyframes img-about{
+}
+@keyframes img-about{
   0% {
     transform: translateX(-20px);
   }
   100% {
     transform: translateX(20px);
   }
-} */
+}
 
 
  
