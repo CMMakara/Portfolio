@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="assets/style.css">
   <!-- link icons bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- link aos animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
 </head>
 
 <body>
@@ -97,7 +100,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6">
-            <div class="card bg-transparent shadow-lg">
+            <div class="card bg-transparent shadow-lg" data-aos="flip-right">
               <img src="assets/image/profile.png" alt="" class="image-profile">
             </div>
           </div>
@@ -107,13 +110,13 @@
 
     <section class="mt-80">
       <div class="container">
-        <h3 class="text-white text-center">My skills</h3>
-        <p class="text-white text-center">I have shared all my skills below for you</p>
-        <div class="row gy-4">
+        <h1 class="text-white text-center text-gradient">My skills</h1>
+        <p class="text-white text-center " style="margin-bottom: 100px;">I have shared all my skills below for you</p>
+        <div class="row gy-5">
           <div class="col-sm-12 col-lg-6">
             <div class="row gy-4">
               <div class="col-md-12">
-                <div class="card border-0">
+                <div class="card border-0" data-aos="fade-up-right">
                   <div class="card-body bg-transparent d-flex ">
                     <img src="assets/image/Webdesgin_icon.png" alt="" class="image-icon">
                     <div class="ms-4">
@@ -125,7 +128,7 @@
                 </div>
               </div>
               <div class="col-md-12">
-                <div class="card border-0">
+                <div class="card border-0" data-aos="fade-up-right">
                   <div class="card-body bg-transparent d-flex ">
                     <img src="assets/image/technology_icon.png" alt="" class="image-icon">
                     <div class="ms-4">
@@ -136,12 +139,13 @@
                 </div>
               </div>
               <div class="col-md-12">
-                <div class="card border-0">
+                <div class="card border-0" data-aos="fade-up-right">
                   <div class="card-body bg-transparent d-flex ">
                     <img src="assets/image/responsive_icon.png" alt="" class="image-icon">
                     <div class="ms-4">
                       <h3 class="card-title text-white text-uppercase text-gradient">responsive website</h3>
-                      <p class="card-text">All catery website responsive design I can do. Langding page website design with responsite.</p>
+                      <p class="card-text">All catery website responsive design I can do. Langding page website design
+                        with responsite.</p>
                     </div>
                   </div>
                 </div>
@@ -149,22 +153,20 @@
             </div>
 
           </div>
-          <div class="col-sm-12 col-lg-6">
-            <div class="skill-bar">
-              <div class="bar html">HTML
-                <span >95%</span>
-              </div>
+          <div class="col-sm-12 col-lg-6 d-flex justify-content-center flex-wrap">
+            <div class="circle me-5 mb-5" data-degree="98" data-color="#E3305C" data-aos="zoom-in-up">
+              <h2 class="number"><span>%</span></h2>
+              <h4>html</h4>
             </div>
-            <div class="skill-bar">
-              <div class="bar css">CSS
-                <span >90%</span>
-              </div>
+            <div class="circle me-5 mb-5" data-degree="95" data-color="#68E330" data-aos="zoom-in-up">
+              <h2 class="number"><span>%</span></h2>
+              <h4>Css</h4>
             </div>
-            <div class="skill-bar">
-              <div class="bar Bootstrap">Bootstrap
-                <span >93%</span>
-              </div>
+            <div class="circle me-5 mb-5" data-degree="96" data-color="#F2F745" data-aos="zoom-in-up">
+              <h2 class="number"><span>%</span></h2>
+              <h4>bootstrap</h4>
             </div>
+
           </div>
         </div>
       </div>
@@ -173,6 +175,9 @@
 
 
   <script src="assets/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 
 </html>
