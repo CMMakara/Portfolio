@@ -4,13 +4,22 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
 body {
   background-color: #0d2430;
   font-family: 'Roboto', sans-serif;
   font-optical-sizing: auto;
   line-height: 1.8;
   overflow-x: hidden;
+}
+.navbar-scrolled {
+  background-color: black !important;
+  transition: background-color 0.4s ease;
+}
+.offcanvas {
+  transition: all 0.3s ease-in-out;
+}
+h1{
+  font-size: 32px !important;
 }
 html{
   scroll-behavior: smooth;
@@ -63,6 +72,7 @@ html{
 .mt-80 {
   margin-top: 80px;
 }
+
 .bg-transparent {
   background-color: #0d2430 !important;
   color: white;
@@ -71,6 +81,7 @@ html{
   width: 400px;
   object-fit: cover;
   margin: auto;
+  filter: drop-shadow(20px 10px 4px #1c3e517b);
 }
 
 .btn-download {
@@ -165,7 +176,7 @@ html{
   line-height: 0.6em;
 }
 .image-profile-about{
-  width: 200px;
+  width: 350px;
   display: inline-block;
   animation: img-about 3s ease-in-out infinite alternate;
   transition: transform 0.3s ease;
