@@ -4,8 +4,16 @@
   padding: 0px;
   box-sizing: border-box;
 }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding-top: 100px;
+}
+main {
+  overflow: hidden;
+}
 body {
-  /* background-color: #0d2430; */
   background: #eeaeca;
   background: linear-gradient(
     310deg,
@@ -288,3 +296,29 @@ textarea {
   transform: scale(0.98);
   border-radius: 20px;
 }
+/* swiper */
+html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #444; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 50%;
+    object-fit: cover;
+  }
+/* end */
